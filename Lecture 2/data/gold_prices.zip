@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>
+    
+Gold Prices (Monthly in USD) - Dataset
+
+    - DataHub - Frictionless Data
+  </title>
+  <meta name="author" content="Datopian">
+  <meta name="keywords" content="data,open data,datasets,public data,data package,reference data,csv,json,excel">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@datahubio" />
+  <meta name="twitter:title" content="Gold Prices (Monthly in USD)" />
+  <meta name="twitter:image" content="https://datahub.io/AcckiyGerman/gold-prices/view/0.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Gold Prices (Monthly in USD)" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="DataHub" />
+  <meta property="og:image" content="https://datahub.io/AcckiyGerman/gold-prices/view/0.png" />
+  <meta property="og:image:alt" content="DataHub" />
+  <meta property="fb:app_id" content="188583668435715" />
+
+  
+  <meta name="description" content="Monthly gold prices since 1950 in USD (London market). Data is sourced from the Bundesbank.
+Data
+Bundesbank statistic page
+Notes from the Source
+General: 1 ounce of fine gold = 31.1034768g. Method of calculation:
+Since 1 April 1968, calculated from the daily morning fixing;
+From January 1950 to 21" />
+  <meta name="twitter:description" content="Monthly gold prices since 1950 in USD (London market). Data is sourced from the Bundesbank.
+Data
+Bundesbank statistic page
+Notes from the Source
+General: 1 ounce of fine gold = 31.1034768g. Method of calculation:
+Since 1 April 1968, calculated from the daily morning fixing;
+From January 1950 to 21" />
+  <meta property="og:description" content="Monthly gold prices since 1950 in USD (London market). Data is sourced from the Bundesbank.
+Data
+Bundesbank statistic page
+Notes from the Source
+General: 1 ounce of fine gold = 31.1034768g. Method of calculation:
+Since 1 April 1968, calculated from the daily morning fixing;
+From January 1950 to 21" />
+  
+
+
+  <link rel="icon" type="img/ico" href="/static/img/favicon.ico" sizes="16x16">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WCTXGJ8');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Minimize page flickering -->
+  <style>.async-hide { opacity: 0 !important} </style>
+  <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+  h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+  (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+  })(window,document.documentElement,'async-hide','dataLayer',1000,
+  {'GTM-WCTXGJ8':true});</script>
+  <!-- End Minimize page flickering -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-80458846-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-80458846-4');
+  </script>
+
+  <!--  Google Analytics - End -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" media="screen" href="/static/stylesheets/app.css">
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.css">
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body class="showcase">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCTXGJ8"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+    <div class="banner" style="margin-bottom:0; font-size: 14px;">
+      <div>
+        DataHub.io by <a href="https://datopian.com/" target="_blank"><img src="https://www.datopian.com/wp-content/uploads/2020/09/datopian-bash-png.png" style="height: 24px; padding-bottom: 4px; padding-left: 3px; padding-right: 3px;" /></a> &mdash;
+        We build solutions that unleash the potential of data <i class="fas fa-rocket" aria-hidden="true"></i> Let's start with yours! <a href="https://datopian.com" target="_blank" style="font-weight: 600; text-decoration:underline;">Learn more about us &raquo;</a>
+      </div>
+    </div>
+    <!-- Page header -->
+    <div class="navbar navbar-default">
+      <div class="container">
+        <div class="inner_container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="main-logo pull-left" href="/">
+              <img class="img-responsive" src="/static/img/datahub-cube-edited.svg">
+            </a>
+          </div>
+          <!--
+          <div class="nav navbar-nav searchbox">
+            <form class="form-inline" action="/search" method="GET">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Find data" name="q">
+              </div>
+            </form>
+          </div>
+          -->
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="/docs/about">About</a>
+              </li>
+              <li>
+                <a href="/blog">Blog</a>
+              </li>
+              <li>
+                <a href="/search" class="find-data join-link">Find data</a>
+              </li>
+              <li>
+                <a href="/collections">Collections</a>
+              </li>
+              <li>
+                <a href="/docs">Docs</a>
+              </li>
+              <li>
+                <a href="/pricing">Pricing</a>
+              </li>
+              <li>
+                <a href="/download">Tools</a>
+              </li>
+              <li>
+                <a href="https://discord.gg/KrRzMKU" class="chat" target="_blank">Chat</a>
+              </li>
+  						<!--
+              <li>
+                <a href="/">DISCOVER</a>
+              </li>
+  						-->
+              
+                <li>
+                  <a href="/login">Login</a>
+                </li>
+                <li>
+                  <a href="/login" class="join-link">Join free</a>
+                </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div><!-- End of page header -->
+
+    
+
+    
+<!-- Load goodtables-ui so we can use it in the body of this page. -->
+<script src="https://unpkg.com/goodtables-ui@1.1.3/dist/goodtables-ui.min.js"></script>
+
+<!-- Premium data offer -->
+<!-- End of Premium data offer -->
+
+<!-- title and owner info -->
+<div class="container">
+  <div class="inner_container">
+    
+
+    
+    
+
+    <!-- Show notice if any of reports is invalid -->
+    
+
+    <div class="showcase-page-header">
+      <h1>
+        Gold Prices (Monthly in USD)
+        
+        <span class="label label-primary" title="This dataset is not published yet.">unlisted</span>
+        
+
+        
+      </h1>
+
+      
+      <p class="clearfix"></p>
+
+      <p class="publisher">
+        <img src="https://www.gravatar.com/avatar/a08d3588fbae0355042537595c65819d?d=https%3A%2F%2Ftesting.datahub.io%2Fstatic%2Fimg%2Flogo-cube03.png" class="img-responsive img-circle avatar" />
+        <a href="/AcckiyGerman">AcckiyGerman</a>
+      </p>
+    </div>
+  </div>
+</div><!-- end of title and owner info -->
+
+<div class="container-no-top-padding">
+  <div class="inner_container">
+    <div class="dataset show">
+      <!-- info about data package -->
+      <div>
+        <table class="table info no-left-padding">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th>Size</th>
+              <th>Format</th>
+              <th>Created</th>
+              <th>Updated</th>
+              <th>License</th>
+              <th>Source</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="col-xs-1">2</td>
+              <td class="col-xs-1">112kB</td>
+              <td class="col-xs-2 format-list">
+                
+                  csv
+                
+                  zip
+                
+              </td>
+              <td class="col-xs-2">4 years ago</td>
+              <td class="col-xs-2">4 years ago</td>
+              <td class="col-xs-2">
+                
+                  <i class="fas fa-gavel"></i> 
+    
+    <a href="http://opendatacommons.org/licenses/pddl/" title="Uses data from 'Open Data Commons Public Domain Dedication and License v1.0'" target="_blank">
+      Open Data Commons Public Domain Dedication and License v1.0
+    </a>
+    
+  
+                
+              </td>
+              <td class="col-xs-2">
+                
+                  <i class="fas fa-external-link-square-alt"></i> 
+    
+    <a href="http://www.bundesbank.de/Navigation/EN/Statistics/Time_series_databases/Macro_economic_time_series/macro_economic_time_series_node.html?anker=AUSSENWIRTSCHAFTDEV" title="Uses data from 'Bundesbank statistics'" target="_blank">
+      Bundesbank statistics
+    </a>
+    
+  
+                
+              </td>
+            </tr>
+          </tbody>
+
+        </table>
+
+      </div>
+
+      <!-- short readme -->
+      
+        <div class="readme-snippet readable-width">Monthly gold prices since 1950 in USD (London market). Data is sourced from the Bundesbank.
+Data
+Bundesbank statistic page
+Notes from the Source
+General: 1 ounce of fine gold = 31.1034768g. Method of calculation:
+Since 1 April 1968, calculated from the daily morning fixing;
+From January 1950 to 21 <a href="#readme" onclick="scrollDown(this)">read more</a></div>
+      
+
+      <!-- download button -->
+      <a href="#data" class="btn btn-lg btn-primary" onclick="scrollDown(this)">Download</a>
+      <!-- developers button -->
+      <a href="#data-cli" class="btn btn-lg btn-default" onclick="scrollDown(this)">Developers</a>
+
+      <!-- views -->
+      <div class="react-me part" data-type="data-views" id="next-section"></div>
+
+      <!-- data files (downloads) table -->
+      <h2 class="section-title" id="data">Data Files</h2>
+      <p>Download files in this dataset</p>
+      <div class="resource-listing part">
+        <table class="table table-condensed table-striped resource-listing">
+          <thead>
+            <th class="col-xs-2">File</th>
+            <th class="col-xs-4">Description</th>
+            <th class="col-xs-1">Size</th>
+            <th class="col-xs-2">Last changed</th>
+            <th class="col-xs-4">Download</th>
+          </thead>
+          <tbody>
+          
+            <tr>
+              <td class="col-xs-2">
+                <i class="far fa-file-alt"></i> <a href="#resource-data" onclick="scrollDown(this)" class="anchor-link" title="data">data</a>
+              </td>
+              <td class="col-xs-4" title="">
+                
+              </td>
+              <td class="col-xs-1" title="16kB">
+                16kB
+              </td>
+              <td class="col-xs-1" title="">
+                
+              </td>
+              <td class="download truncate col-xs-4">
+                <a href="/AcckiyGerman/gold-prices/r/data.csv">
+                  csv (16kB)
+                </a>
+                
+                ,
+                <a href="/AcckiyGerman/gold-prices/r/data.json">
+                  json (32kB)
+                </a>
+                
+              </td>
+            </tr>
+          
+            <tr>
+              <td class="col-xs-2">
+                <i class="far fa-file-alt"></i> <a href="#resource-gold-prices_zip" onclick="scrollDown(this)" class="anchor-link" title="gold-prices_zip">gold-prices_zip</a>
+              </td>
+              <td class="col-xs-4" title="Compressed versions of dataset. Includes normalized CSV and JSON data with original data and datapackage.json.">
+                Compressed versions of dataset. Includes normalized CSV and JSON data with original data and datapackage.json.
+              </td>
+              <td class="col-xs-1" title="17kB">
+                17kB
+              </td>
+              <td class="col-xs-1" title="">
+                
+              </td>
+              <td class="download truncate col-xs-4">
+                <a href="/AcckiyGerman/gold-prices/r/gold-prices_zip.zip">
+                  zip (17kB)
+                </a>
+                
+              </td>
+            </tr>
+          
+          </tbody>
+        </table>
+      </div>
+
+      <!-- preview + field information -->
+      
+      
+      <div class="resource-info part">
+        <!-- Heading for each resource -->
+        <h2 id="resource-data" class="section-title">
+          
+          data
+          
+          &nbsp;
+          <a href="/AcckiyGerman/gold-prices/r/data.csv">
+            <i class="far fa-arrow-alt-circle-down" aria-hidden="true" style="font-size:0.9em"></i>
+          </a>
+        </h2>
+        <!-- Render validation reports for each resource: -->
+        <div id="report-0"></div>
+
+        <script>
+          if ('{\&quot;time\&quot;:3.504,\&quot;valid\&quot;:true,\&quot;error-count\&quot;:0,\&quot;table-count\&quot;:1,\&quot;tables\&quot;:[{\&quot;time\&quot;:3.495,\&quot;valid\&quot;:true,\&quot;error-count\&quot;:0,\&quot;row-count\&quot;:819,\&quot;source\&quot;:\&quot;https://s3.amazonaws.com/rawstore.datahub.io/54d950ed189545d22b8012704881db3f.csv\&quot;,\&quot;headers\&quot;:[\&quot;date\&quot;,\&quot;price\&quot;],\&quot;scheme\&quot;:\&quot;https\&quot;,\&quot;format\&quot;:\&quot;csv\&quot;,\&quot;encoding\&quot;:\&quot;iso8859-2\&quot;,\&quot;schema\&quot;:\&quot;table-schema\&quot;,\&quot;errors\&quot;:[]}],\&quot;warnings\&quot;:[],\&quot;preset\&quot;:\&quot;table\&quot;,\&quot;resource\&quot;:\&quot;data\&quot;}') {
+            var report = JSON.parse(`"{\\\"time\\\":3.504,\\\"valid\\\":true,\\\"error-count\\\":0,\\\"table-count\\\":1,\\\"tables\\\":[{\\\"time\\\":3.495,\\\"valid\\\":true,\\\"error-count\\\":0,\\\"row-count\\\":819,\\\"source\\\":\\\"https://s3.amazonaws.com/rawstore.datahub.io/54d950ed189545d22b8012704881db3f.csv\\\",\\\"headers\\\":[\\\"date\\\",\\\"price\\\"],\\\"scheme\\\":\\\"https\\\",\\\"format\\\":\\\"csv\\\",\\\"encoding\\\":\\\"iso8859-2\\\",\\\"schema\\\":\\\"table-schema\\\",\\\"errors\\\":[]}],\\\"warnings\\\":[],\\\"preset\\\":\\\"table\\\",\\\"resource\\\":\\\"data\\\"}"`);
+            report = JSON.parse(report);
+            var element = document.getElementById('report-0');
+            goodtablesUI.render(goodtablesUI.Report, {report}, element);
+          }
+          // Hide message about "goodtable.yml"
+          var errorDetailsLinks = document.getElementsByClassName('error-details-link');
+          for (var i=0; i<errorDetailsLinks.length; i++) {
+            errorDetailsLinks[i].onclick = function () {
+              setTimeout(function () {
+                var liTags = document.getElementsByTagName('li');
+                for (var i=0; i<liTags.length; i++) {
+                  if (liTags[i].textContent.includes('check in goodtables.yml')) {
+                    liTags[i].style.display = 'none';
+                  }
+                }
+              }, 10)
+            }
+          }
+        </script>
+        <!-- End of reports rendering -->
+
+        <!-- Premium Data Offer Link -->
+        
+
+        <!-- Placeholder div elements for React components: preview tables -->
+        <div id="resource-0" class="react-me tables"
+             data-type="resource-preview" data-resource="0"></div>
+        <!-- End of div elements for React -->
+        <p class="notice">
+          This is a preview version. There might be more data in <a href="/AcckiyGerman/gold-prices/r/data.csv">the original version.</a>
+        </p>
+        
+         <h3 class="section-title">Field information</h3>
+         <table class="table table-bordered table-striped resource-summary">
+           <thead>
+             <tr>
+               <th>Field Name</th>
+               <th>Order</th>
+               <th>Type (Format)</th>
+               <th>Description</th>
+             </tr>
+           </thead>
+           <tbody>
+             
+             <tr>
+               <th>date</th>
+               <td>1</td>
+               <td class="type type-date">date (%Y-%m-%d) </td>
+               <td></td>
+             </tr>
+             
+             <tr>
+               <th>price</th>
+               <td>2</td>
+               <td class="type type-number">number </td>
+               <td></td>
+             </tr>
+             
+           </tbody>
+         </table>
+       
+      </div>
+      
+      
+      
+      <!-- Placeholder div elements for React components: preview tables -->
+      <div id="resource-1" class="react-me tables"
+           data-type="resource-preview" data-resource="1"></div>
+      <!-- End of div elements for React -->
+      
+      
+
+      <!-- Similar datasets -->
+      
+      <!-- End of Similar datasets -->
+
+
+      <!-- Search -->
+      <section class="similar-search hidden-xs hidden-sm">
+        <div class="row">
+            <div class="col-sm-1">
+                <div class="icon pull-left shadow">
+                    <img src="/static/img/icon-search.png" class="img-responsive"/>
+                </div>
+            </div>
+            <div class="col-sm-6">
+              <h3>Not found what you're looking for?</h3>
+              <p>You can search over a thousand datasets on datahub</p>
+            </div>
+            <div class="col-sm-5">
+                <!-- searchbox -->
+                <form class="search-form form form-inline" class="input-group col-xs-12" action="/search" method="GET">
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control input-lg" placeholder="Search ..." name="q" required />
+                  </div>
+                  <div class="col-sm-3">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                  </div>
+      
+                </form>
+                <!-- search box ended -->
+            </div>
+        </div>
+      </section>
+      <!-- end of search -->
+
+    </div>
+  </div>
+</div>
+
+<!-- import into your tool section -->
+<div class="section-gray">
+  <div class="container">
+    <div class="inner_container">
+      <div class="dataset show">
+        <h2 class="section-title">Integrate this dataset into your favourite tool</h2>
+        <ul class="nav nav-pills">
+          <li class="active"><a data-toggle="pill" href="#data-cli">data-cli</a></li>
+          <li><a data-toggle="pill" href="#curl">cURL</a></li>
+          <li><a data-toggle="pill" href="#r">R</a></li>
+          <li><a data-toggle="pill" href="#pandas">Pandas</a></li>
+          <li><a data-toggle="pill" href="#python">Python</a></li>
+          <li><a data-toggle="pill" href="#javascript">JavaScript</a></li>
+        </ul>
+        <!-- content for instructions -->
+        <div class="tab-content">
+
+          <div id="data-cli" class="tab-pane fade in active">
+            <div class="part">
+              <p>
+  Use our <a href="/download">data-cli</a> tool designed for data wranglers:
+</p>
+
+<pre class="hljs"><code><span class="hljs-keyword">data get </span><span class="hljs-string">https://datahub.io/AcckiyGerman/gold-prices</span>
+<span class="hljs-keyword">data info </span><span class="hljs-string">AcckiyGerman/gold-prices</span>
+<span class="hljs-keyword">tree </span><span class="hljs-string">AcckiyGerman/gold-prices</span>
+</code></pre>
+            </div>
+          </div>
+
+          <div id="curl" class="tab-pane fade">
+            <div class="part">
+              <pre class="hljs"><code><span class="hljs-comment"># Get a list of dataset's resources</span>
+<span class="hljs-keyword">curl</span> -L -s <span class="hljs-string">https://datahub.io/AcckiyGerman/gold-prices/datapackage.json</span> | <span class="hljs-keyword">grep</span> path
+
+<span class="hljs-comment"># Get resources</span>
+
+<span class="hljs-keyword">curl </span><span class="hljs-string">-L https://datahub.io/AcckiyGerman/gold-prices/r/0.csv</span>
+
+<span class="hljs-keyword">curl </span><span class="hljs-string">-L https://datahub.io/AcckiyGerman/gold-prices/r/1.zip</span>
+
+</code></pre>
+            </div>
+          </div>
+
+          <div id="r" class="tab-pane fade">
+            <div class="part">
+              <p>If you are using R here's how to get the data you want quickly loaded:</p>
+<pre class="hljs"><code>install.packages(<span class="hljs-string">"jsonlite", repos="https://cran.rstudio.com/"</span>)
+<span class="hljs-keyword">library</span>(<span class="hljs-string">"jsonlite"</span>)
+
+json_file &lt;- <span class="hljs-string">'https://datahub.io/AcckiyGerman/gold-prices/datapackage.json'</span>
+json_data &lt;- fromJSON(paste(readLines(json_file), collapse=<span class="hljs-string">""</span>))
+
+<span class="hljs-comment"># get list of all resources:</span>
+print(json_data$resources$name)
+
+<span class="hljs-comment"># print all tabular data(if exists any)</span>
+<span class="hljs-keyword">for</span>(i <span class="hljs-keyword">in</span> <span class="hljs-number">1</span>:length(json_data$resources$datahub$type)){
+  <span class="hljs-keyword">if</span>(json_data$resources$datahub$type[i]==<span class="hljs-string">'derived/csv'</span>){
+    path_to_file = json_data$resources$path[i]
+    data &lt;- read.csv(url(path_to_file))
+    print(data)
+  }
+}
+</code></pre>
+<p><i><strong>Note:</strong> You might need to run the script with root permissions if you are running on Linux machine</i></p>
+            </div>
+          </div>
+
+          <div id="pandas" class="tab-pane fade">
+            <div class="part">
+              <p>Install the Frictionless Data data package library and the pandas itself:</p>
+<pre class="hljs"><code>pip install datapackage
+pip install pandas
+</code></pre>
+
+<p>Now you can use the datapackage in the Pandas:</p>
+
+<pre class="hljs"><code><span class="hljs-keyword">import</span> datapackage
+<span class="hljs-keyword">import</span> pandas <span class="hljs-keyword">as</span> pd
+
+data_url = <span class="hljs-string">'https://datahub.io/AcckiyGerman/gold-prices/datapackage.json'</span>
+
+<span class="hljs-comment"># to load Data Package into storage</span>
+package = datapackage.Package(data_url)
+
+<span class="hljs-comment"># to load only tabular data</span>
+resources = package.resources
+<span class="hljs-keyword">for</span> resource <span class="hljs-keyword">in</span> resources:
+    <span class="hljs-keyword">if</span> resource.tabular:
+        data = pd.read_csv(resource.descriptor[<span class="hljs-string">'path'</span>])
+        <span class="hljs-keyword">print</span> (data)
+</code></pre>
+            </div>
+          </div>
+
+          <div id="python" class="tab-pane fade">
+            <div class="part">
+              <p>For Python, first install the `datapackage` library (all the datasets on DataHub are Data Packages):</p>
+
+<pre class="hljs"><code>pip install datapackage
+</code></pre>
+
+<p>To get Data Package into your Python environment, run following code:</p>
+
+<pre class="hljs"><code><span class="hljs-keyword">from</span> datapackage <span class="hljs-keyword">import</span> Package
+
+package = Package(<span class="hljs-string">'https://datahub.io/AcckiyGerman/gold-prices/datapackage.json'</span>)
+
+<span class="hljs-comment"># print list of all resources:</span>
+<span class="hljs-keyword">print</span>(package.resource_names)
+
+<span class="hljs-comment"># print processed tabular data (if exists any)</span>
+<span class="hljs-keyword">for</span> resource <span class="hljs-keyword">in</span> package.resources:
+    <span class="hljs-keyword">if</span> resource.descriptor['datahub']['type'] == 'derived/csv':
+        <span class="hljs-keyword">print</span>(resource.read())
+</code></pre>
+            </div>
+          </div>
+
+          <div id="javascript" class="tab-pane fade">
+            <div class="part">
+              <p>If you are using JavaScript, please, follow instructions below:</p>
+<p>Install <code>data.js</code> module using <code>npm</code>:</p>
+<p>
+  <pre class="hljs">  <code>$ npm install data.js
+</code></pre>
+</p>
+<p>Once the package is installed, use the following code snippet:</p>
+<pre class="hljs"><code><span class="hljs-keyword">const</span> {Dataset} = <span class="hljs-built_in">require</span>(<span class="hljs-string">'data.js'</span>)
+
+<span class="hljs-keyword">const</span> path = <span class="hljs-string">'https://datahub.io/AcckiyGerman/gold-prices/datapackage.json'</span>
+
+<span class="hljs-comment">// We're using self-invoking function here as we want to use async-await syntax:</span>
+;<span class="hljs-function">(<span class="hljs-params"><span class="hljs-keyword">async</span> (</span>) =&gt;</span> {
+  <span class="hljs-keyword">const</span> dataset = <span class="hljs-keyword">await</span> Dataset.load(path)
+  <span class="hljs-comment">// get list of all resources:</span>
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> id <span class="hljs-keyword">in</span> dataset.resources) {
+    <span class="hljs-built_in">console</span>.log(dataset.resources[id]._descriptor.name)
+  }
+  <span class="hljs-comment">// get all tabular data(if exists any)</span>
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> id <span class="hljs-keyword">in</span> dataset.resources) {
+    <span class="hljs-keyword">if</span> (dataset.resources[id]._descriptor.format === <span class="hljs-string">"csv"</span>) {
+      <span class="hljs-keyword">const</span> file = dataset.resources[id]
+      <span class="hljs-comment">// Get a raw stream</span>
+      <span class="hljs-keyword">const</span> stream = <span class="hljs-keyword">await</span> file.stream()
+      <span class="hljs-comment">// entire file as a buffer (be careful with large files!)</span>
+      <span class="hljs-keyword">const</span> buffer = <span class="hljs-keyword">await</span> file.buffer
+      <span class="hljs-comment">// print data</span>
+      stream.pipe(process.stdout)
+    }
+  }
+})()
+</code></pre>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- end of import into your tool section -->
+
+<!-- readme section -->
+
+<div class="container">
+  <div class="inner_container">
+    <div class="dataset show">
+      <h2 id="readme" class="section-title">Read me</h2>
+      <div class="readme part readable-width"><p>Monthly gold prices since 1950 in USD (London market). Data is sourced from the Bundesbank.</p>
+<h2>Data <a class="header-anchor" href="#data"><i class="fas fa-link"></i></a></h2>
+<ul>
+<li><a href="http://www.bundesbank.de/Navigation/EN/Statistics/Time_series_databases/Macro_economic_time_series/macro_economic_time_series_node.html?anker=AUSSENWIRTSCHAFTDEV">Bundesbank statistic page</a></li>
+</ul>
+<h3>Notes from the Source <a class="header-anchor" href="#notes-from-the-source"><i class="fas fa-link"></i></a></h3>
+<p>General: 1 ounce of fine gold = 31.1034768g. Method of calculation:</p>
+<ul>
+<li>Since 1 April 1968, calculated from the daily morning fixing;</li>
+<li>From January 1950 to 21 March 1954, calculated using the Bank of England’s gold purchasing price (1 ounce of fine = pound 12.40) in connection with the average exchange rate for the pound in New York (up to the end of 1952; source: Federal Reserve Bulletin) and, from January 1953, midpoint exchange rates for the US dollar in London (source: Financial Times (FT)).</li>
+<li>From 22 March 1954 to December 1959, calculated using the fixing price for gold bars of approx. 12 1/2 kg and 995/1000 fineness and over (so-called standard bars) according to data from Metallgesellschaft AG, Frankfurt am Main, in connection with the average midpoint exchange rates for the US dollar in London (source: FT).</li>
+<li>From January 1960 to 14 March 1968, average fixing price for standard bars as specified in the Bank of England’s Quarterly Bulletin.</li>
+<li>On 15 March 1968, fixing price suspended. Gold market split into an official (reserved for central banks) and a free market as a result of the Washington Communique of 17 March 1968. Gold trading suspended from 18 to 29 March 1968.</li>
+<li>Sources for daily prices: April 1968 - March 1974: FT; April 1974 - December 1980: Samuel Montagu &amp; Co. Ltd.; January 1981 - December 2005: FT; January 2006 - present: Reuters.</li>
+<li>Comment on 1968-03: Average from 1 to 14 March 1968.</li>
+</ul>
+<h2>Automation <a class="header-anchor" href="#automation"><i class="fas fa-link"></i></a></h2>
+<p>This dataset is automatically updates every month on the <a href="https://datahub.io">datahub.io</a> site: <a href="https://datahub.io/core/gold-prices">http://datahub.io/core/gold-prices</a></p>
+<h2>License <a class="header-anchor" href="#license"><i class="fas fa-link"></i></a></h2>
+<p>The maintainers have licensed under the Public Domain Dedication and License. The source at the Bundesbank indicates no obvious restrictions on the data and the amount means that database rights are doubtful.</p>
+</div>
+    </div>
+  </div>
+</div>
+<!-- end of readme section -->
+
+
+<!-- Link to datapackage.json - putting here to be hidden for now -->
+<div class="container">
+  <div class="inner_container">
+    <a href="/AcckiyGerman/gold-prices/datapackage.json" class="btn btn-default" style="margin-top:-80px">Datapackage.json</a>
+  </div>
+</div><!-- end of link to datapackage.json -->
+
+
+
+
+
+    <!-- Footer Sections -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-3">
+                    <img class="img-responsive" src="/static/img/datahub-cube-edited.svg" width=60>
+                    <br/>
+                    <p>At Datahub, we provide various solutions to Publish and Deploy your Data with power and simplicity. Datahub is the fastest way for individuals, teams and organizations to publish, deploy and share their data.</p>
+                </div>
+
+                <div class="col-sm-3 col-md-2 col-md-offset-1">
+                    <label>Links</label>
+                    <ul>
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="/docs/terms-of-service">Terms of Service</a>
+                          </li>
+                        <li>
+                            <a href="/docs/privacy">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="https://docs.datahub.io/developers/api/">API</a>
+                        </li>
+                        <li>
+                            <a href="/blog">Blog</a>
+                        </li>
+                        <li>
+                            <a href="https://old.datahub.io" target="_blank">Old DataHub</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-2">
+                    <label>Support</label>
+                    <ul>
+                        <li>
+                            <a href="https://discord.gg/KrRzMKU">Chat</a>
+                        </li>
+                        <li>
+                            <a href="/docs/faq">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-2 col-md-offset-1">
+                    <label>Contact</label>
+                    <ul>
+                        <li>
+                            <a href="/cdn-cgi/l/email-protection#61121411110e131521050015000914034f080e"><span class="__cf_email__" data-cfemail="52212722223d202612363326333a27307c3b3d">[email&#160;protected]</span></a>
+                        </li>
+                        <!-- <li>
+                            <a href="#">+44 xxx xxxx</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+            <div class="container pad-top-0">
+                <div class="row">
+                    <div class="col-sm-8 text-left col-md-4">
+                        <p>&copy; 2018 All Rights Reserved </p>
+                    </div>
+                    <div class="col-sm-12 col-md-7 col-md-offset-1 footer-logos">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <a href="https://datopian.com/" target="_blank">
+                            <img src="/static/img/datopian-logo.png" class="img-responsive" />
+                          </a>
+                        </div>
+                        <div class="col-sm-3">
+                          <a href="https://okfn.org/" target="_blank">
+                            <img src="/static/img/okfn-new-logo.png" class="img-responsive" />
+                          </a>
+                        </div>
+                        <div class="col-sm-3">
+                          <a href="https://www.sloan.org/" target="_blank">
+                            <img src="/static/img/sloan-foundation.png" class="img-responsive" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="col-sm-4 social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div> -->
+                </div>
+            </div>
+	</div>
+  <!-- end of footer -->
+
+
+
+  
+<!-- Function for reading query params -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  function getURLParameter(sParam) {
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) {
+      var sParameterName = sURLVariables[i].split('=');
+      if (sParameterName[0] == sParam) {
+          return sParameterName[1];
+      }
+    }
+  }
+</script>
+<!-- script for tabs to work as anchors (used for instructions in showcase page) -->
+<script>
+  jQuery("ul.nav-pills > li > a").on("shown.bs.tab", function (e) {
+     scrollposition = jQuery(document).scrollTop();
+     var id = jQuery(e.target).attr("href").substr(1);
+     window.location.hash = id;
+     jQuery(document).scrollTop(scrollposition);
+  });
+  var hash = window.location.hash;
+  jQuery('.nav.nav-pills a[href="' + hash + '"]').tab('show', function() {
+      jQuery(document).scrollTop();
+  });
+
+
+  //Slide out function for showcase
+  $(window).on('load', function() {
+    $("#showcase-offer").animate({
+      bottom:0
+    },1000);
+   });
+
+   function goToSearch() {
+    var query = document.getElementById('search-input').value;
+    window.location.href = '/search?q=' + query;
+  }
+</script>
+
+<!-- pass DP_ID to front-end -->
+<script type="text/javascript">
+  var DP_ID = JSON.parse('{"datahub":{"created":"4 years ago","findability":"unlisted","flowid":"a08d3588fbae0355042537595c65819d/gold-prices/8","hash":"26e0a8bece801ed88e2f867397e12eb6","modified":"4 years ago","owner":"AcckiyGerman","ownerid":"a08d3588fbae0355042537595c65819d","stats":{"bytes":83602,"rowcount":818,"prettyBytes":"82kB"},"modifiedISO":"2018-04-26T13:18:55.072794","createdISO":"2018-01-19T13:39:12.119388"},"description":"","id":"a08d3588fbae0355042537595c65819d/gold-prices","licenses":[{"name":"ODC-PDDL-1.0","path":"http://opendatacommons.org/licenses/pddl/","title":"Open Data Commons Public Domain Dedication and License v1.0"}],"name":"gold-prices","readme":"Monthly gold prices since 1950 in USD (London market). Data is sourced from the Bundesbank.\\r\\n\\r\\n## Data\\r\\n\\r\\n* [Bundesbank statistic page](http://www.bundesbank.de/Navigation/EN/Statistics/Time_series_databases/Macro_economic_time_series/macro_economic_time_series_node.html?anker=AUSSENWIRTSCHAFTDEV)\\r\\n\\r\\n### Notes from the Source\\r\\n\\r\\nGeneral: 1 ounce of fine gold = 31.1034768g. Method of calculation:\\r\\n\\r\\n* Since 1 April 1968, calculated from the daily morning fixing;\\r\\n* From January 1950 to 21 March 1954, calculated using the Bank of England\'s gold purchasing price (1 ounce of fine = pound 12.40) in connection with the average exchange rate for the pound in New York (up to the end of 1952; source: Federal Reserve Bulletin) and, from January 1953, midpoint exchange rates for the US dollar in London (source: Financial Times (FT)).\\r\\n* From 22 March 1954 to December 1959, calculated using the fixing price for gold bars of approx. 12 1/2 kg and 995/1000 fineness and over (so-called standard bars) according to data from Metallgesellschaft AG, Frankfurt am Main, in connection with the average midpoint exchange rates for the US dollar in London (source: FT).\\r\\n* From January 1960 to 14 March 1968, average fixing price for standard bars as specified in the Bank of England\'s Quarterly Bulletin.\\r\\n* On 15 March 1968, fixing price suspended. Gold market split into an official (reserved for central banks) and a free market as a result of the Washington Communique of 17 March 1968. Gold trading suspended from 18 to 29 March 1968.\\r\\n* Sources for daily prices: April 1968 - March 1974: FT; April 1974 - December 1980: Samuel Montagu & Co. Ltd.; January 1981 - December 2005: FT; January 2006 - present: Reuters.\\r\\n* Comment on 1968-03: Average from 1 to 14 March 1968.\\r\\n\\r\\n## Automation\\r\\n\\r\\nThis dataset is automatically updates every month on the datahub.io site: http://datahub.io/core/gold-prices\\r\\n\\r\\n## License\\r\\n\\r\\nThe maintainers have licensed under the Public Domain Dedication and License. The source at the Bundesbank indicates no obvious restrictions on the data and the amount means that database rights are doubtful.\\r\\n\\r\\n","resources":[{"bytes":16191,"datahub":{"derivedFrom":["data"],"type":"derived/csv"},"dialect":{"delimiter":",","doubleQuote":true,"lineTerminator":"\\r\\n","quoteChar":"\\"","skipInitialSpace":false},"dpp:streamedFrom":"https://s3.amazonaws.com/rawstore.datahub.io/54d950ed189545d22b8012704881db3f.csv","encoding":"utf-8","format":"csv","hash":"53441682955536c5ba7bd5cdb0a47648","mediatype":"text/csv","name":"data","path":"https://pkgstore.datahub.io/a08d3588fbae0355042537595c65819d/gold-prices/data_csv/data/53441682955536c5ba7bd5cdb0a47648/data_csv.csv","pathType":"local","profile":"data-resource","rowcount":818,"schema":{"fields":[{"format":"%Y-%m-%d","name":"date","type":"date"},{"decimalChar":".","groupChar":"","name":"price","type":"number"}]},"signed":true,"title":"","description":"","alternates":[{"bytes":16189,"datahub":{"type":"source/tabular"},"dpp:streamedFrom":"https://s3.amazonaws.com/rawstore.datahub.io/54d950ed189545d22b8012704881db3f.csv","encoding":"ISO-8859-2","format":"csv","mediatype":"text/csv","name":"data","path":"https://pkgstore.datahub.io/a08d3588fbae0355042537595c65819d/gold-prices/data/archive/54d950ed189545d22b8012704881db3f/data.csv","pathType":"local","profile":"data-resource","schema":{"fields":[{"format":"any","name":"date","type":"date"},{"name":"price","type":"number"}]},"signed":true,"prettyBytes":"16kB"},{"bytes":32995,"datahub":{"derivedFrom":["data"],"type":"derived/json"},"dpp:streamedFrom":"https://s3.amazonaws.com/rawstore.datahub.io/54d950ed189545d22b8012704881db3f.csv","encoding":"utf-8","format":"json","hash":"d17db5a3ad72b4b4dabd347bff7b2a1b","mediatype":"text/csv","name":"data_json","path":"https://pkgstore.datahub.io/a08d3588fbae0355042537595c65819d/gold-prices/data_json/data/d17db5a3ad72b4b4dabd347bff7b2a1b/data_json.json","pathType":"local","profile":"data-resource","rowcount":818,"schema":{"fields":[{"format":"%Y-%m-%d","name":"date","type":"date"},{"name":"price","type":"number"}]},"signed":true,"prettyBytes":"32kB"}],"prettyBytes":"16kB","report":"{\\\\\\"time\\\\\\":3.504,\\\\\\"valid\\\\\\":true,\\\\\\"error-count\\\\\\":0,\\\\\\"table-count\\\\\\":1,\\\\\\"tables\\\\\\":[{\\\\\\"time\\\\\\":3.495,\\\\\\"valid\\\\\\":true,\\\\\\"error-count\\\\\\":0,\\\\\\"row-count\\\\\\":819,\\\\\\"source\\\\\\":\\\\\\"https://s3.amazonaws.com/rawstore.datahub.io/54d950ed189545d22b8012704881db3f.csv\\\\\\",\\\\\\"headers\\\\\\":[\\\\\\"date\\\\\\",\\\\\\"price\\\\\\"],\\\\\\"scheme\\\\\\":\\\\\\"https\\\\\\",\\\\\\"format\\\\\\":\\\\\\"csv\\\\\\",\\\\\\"encoding\\\\\\":\\\\\\"iso8859-2\\\\\\",\\\\\\"schema\\\\\\":\\\\\\"table-schema\\\\\\",\\\\\\"errors\\\\\\":[]}],\\\\\\"warnings\\\\\\":[],\\\\\\"preset\\\\\\":\\\\\\"table\\\\\\",\\\\\\"resource\\\\\\":\\\\\\"data\\\\\\"}","reportObj":{"time":3.504,"valid":true,"error-count":0,"table-count":1,"tables":[{"time":3.495,"valid":true,"error-count":0,"row-count":819,"source":"https://s3.amazonaws.com/rawstore.datahub.io/54d950ed189545d22b8012704881db3f.csv","headers":["date","price"],"scheme":"https","format":"csv","encoding":"iso8859-2","schema":"table-schema","errors":[]}],"warnings":[],"preset":"table","resource":"data"}},{"bytes":17798,"datahub":{"type":"derived/zip"},"description":"Compressed versions of dataset. Includes normalized CSV and JSON data with original data and datapackage.json.","dpp:streamedFrom":"/tmp/592.gold-prices.zip","format":"zip","name":"gold-prices_zip","path":"https://pkgstore.datahub.io/a08d3588fbae0355042537595c65819d/gold-prices/gold-prices_zip/data/b55ccd4699d088072d9a563fd1ad5d72/gold-prices_zip.zip","profile":"data-resource","prettyBytes":"17kB"}],"sources":[{"name":"Bundesbank statistics","path":"http://www.bundesbank.de/Navigation/EN/Statistics/Time_series_databases/Macro_economic_time_series/macro_economic_time_series_node.html?anker=AUSSENWIRTSCHAFTDEV","title":"Bundesbank statistics"}],"title":"Gold Prices (Monthly in USD)","views":[{"name":"graph","spec":{"group":"date","series":["price"],"type":"lines-and-points"},"specType":"simple","title":"Gold Prices (Monthly in USD)"},{"datahub":{"type":"preview"},"name":"datahub-preview-data_csv_preview","resources":["data"],"specType":"table","transform":{"limit":2000}}],"report":{"bytes":429,"datahub":{"type":"derived/report"},"description":"Validation report for tabular data","dpp:streamedFrom":"validation_report.json","format":"json","hash":"2fac0852364aaf70e29b1e6140c9fb14","name":"validation_report","path":"https://pkgstore.datahub.io/a08d3588fbae0355042537595c65819d/gold-prices/validation_report/data/2fac0852364aaf70e29b1e6140c9fb14/validation_report.json","profile":"data-resource","valid":true},"path":"https://pkgstore.datahub.io/a08d3588fbae0355042537595c65819d/gold-prices/8","readmeSnippet":"Monthly gold prices since 1950 in USD (London market). Data is sourced from the Bundesbank.\\nData\\nBundesbank statistic page\\nNotes from the Source\\nGeneral: 1 ounce of fine gold = 31.1034768g. Method of calculation:\\nSince 1 April 1968, calculated from the daily morning fixing;\\nFrom January 1950 to 21","readmeHtml":"<p>Monthly gold prices since 1950 in USD (London market). Data is sourced from the Bundesbank.</p>\\n<h2>Data <a class=\\"header-anchor\\" href=\\"#data\\"><i class=\\"fas fa-link\\"></i></a></h2>\\n<ul>\\n<li><a href=\\"http://www.bundesbank.de/Navigation/EN/Statistics/Time_series_databases/Macro_economic_time_series/macro_economic_time_series_node.html?anker=AUSSENWIRTSCHAFTDEV\\">Bundesbank statistic page</a></li>\\n</ul>\\n<h3>Notes from the Source <a class=\\"header-anchor\\" href=\\"#notes-from-the-source\\"><i class=\\"fas fa-link\\"></i></a></h3>\\n<p>General: 1 ounce of fine gold = 31.1034768g. Method of calculation:</p>\\n<ul>\\n<li>Since 1 April 1968, calculated from the daily morning fixing;</li>\\n<li>From January 1950 to 21 March 1954, calculated using the Bank of England’s gold purchasing price (1 ounce of fine = pound 12.40) in connection with the average exchange rate for the pound in New York (up to the end of 1952; source: Federal Reserve Bulletin) and, from January 1953, midpoint exchange rates for the US dollar in London (source: Financial Times (FT)).</li>\\n<li>From 22 March 1954 to December 1959, calculated using the fixing price for gold bars of approx. 12 1/2 kg and 995/1000 fineness and over (so-called standard bars) according to data from Metallgesellschaft AG, Frankfurt am Main, in connection with the average midpoint exchange rates for the US dollar in London (source: FT).</li>\\n<li>From January 1960 to 14 March 1968, average fixing price for standard bars as specified in the Bank of England’s Quarterly Bulletin.</li>\\n<li>On 15 March 1968, fixing price suspended. Gold market split into an official (reserved for central banks) and a free market as a result of the Washington Communique of 17 March 1968. Gold trading suspended from 18 to 29 March 1968.</li>\\n<li>Sources for daily prices: April 1968 - March 1974: FT; April 1974 - December 1980: Samuel Montagu &amp; Co. Ltd.; January 1981 - December 2005: FT; January 2006 - present: Reuters.</li>\\n<li>Comment on 1968-03: Average from 1 to 14 March 1968.</li>\\n</ul>\\n<h2>Automation <a class=\\"header-anchor\\" href=\\"#automation\\"><i class=\\"fas fa-link\\"></i></a></h2>\\n<p>This dataset is automatically updates every month on the <a href=\\"http://datahub.io\\">datahub.io</a> site: <a href=\\"http://datahub.io/core/gold-prices\\">http://datahub.io/core/gold-prices</a></p>\\n<h2>License <a class=\\"header-anchor\\" href=\\"#license\\"><i class=\\"fas fa-link\\"></i></a></h2>\\n<p>The maintainers have licensed under the Public Domain Dedication and License. The source at the Bundesbank indicates no obvious restrictions on the data and the amount means that database rights are doubtful.</p>\\n","formats":["csv","zip"],"downloads":[{"name":"data","format":"csv","title":"","description":"","prettyBytes":"16kB","download":"https://pkgstore.datahub.io/a08d3588fbae0355042537595c65819d/gold-prices/data_csv/data/53441682955536c5ba7bd5cdb0a47648/data_csv.csv","otherFormats":[{"name":"data_json","format":"json","prettyBytes":"32kB","download":"https://pkgstore.datahub.io/a08d3588fbae0355042537595c65819d/gold-prices/data_json/data/d17db5a3ad72b4b4dabd347bff7b2a1b/data_json.json"}]},{"name":"gold-prices_zip","format":"zip","description":"Compressed versions of dataset. Includes normalized CSV and JSON data with original data and datapackage.json.","prettyBytes":"17kB","download":"https://pkgstore.datahub.io/a08d3588fbae0355042537595c65819d/gold-prices/gold-prices_zip/data/b55ccd4699d088072d9a563fd1ad5d72/gold-prices_zip.zip","otherFormats":[]}]}');
+</script>
+
+
+  <link rel="stylesheet" media="screen" href="/static/dpr-js/dist/main.css">
+  <script type="text/javascript" src="/static/dpr-js/dist/bundle.js"></script>
+
+
+
+
+	
+	<script src="/static/js/emojify.js"></script>
+    <script type="text/javascript" src="/static/js/smoothscroll.min.js"></script>
+	
+    <script>
+      // Emojify text:
+      emojify.setConfig({
+        only_crawl_id    : null,            // Use to restrict where emojify.js applies
+        img_dir          : '/static/img/emoji',  // Directory for emoji images
+        ignored_tags     : {                // Ignore the following tags
+            'SCRIPT'  : 1,
+            'TEXTAREA': 1,
+            'PRE'     : 1,
+            'CODE'    : 1
+        }
+      });
+      emojify.run();
+
+      function getCookie(name) {
+        var value = "; " + document.cookie;
+        var parts = value.split("; " + name + "=");
+        if (parts.length == 2) return parts.pop().split(";").shift();
+      }
+
+      // Set the userid for Google Tags Manager:
+      dataLayer.push({'userId': getCookie('id')});
+
+      function scrollDown(el) {
+        document.querySelector(el.attributes.href.value).scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+      // Popover on avatar icon in navbar and certified
+      jQuery(document).ready(function(){
+        jQuery('[data-toggle="popover"]').popover({
+          'placement': 'bottom',
+          'trigger': 'focus',
+          'html': true
+        });
+
+        $('.certified-tick').attr('data-original-title','<b>Datahub Certified</b> <ul><li>&#x25CF; Quality assured data </li><li>&#x25CF; Sources audited </li><li>&#x25CF; Premium data available for bespoke formatting, additional data and guaranteed updates with SLA</li></ul>');
+        $('[data-toggle="tooltip"]').tooltip({html:true}); 
+        
+      });
+      // Set avatar in navbar using id in cookies
+      var src = `https://www.gravatar.com/avatar/${getCookie('id')}?d=https%3A%2F%2Ftesting.datahub.io%2Fstatic%2Fimg%2Flogo-cube03.png`;
+      var avatar = document.getElementById('avatar');
+      if (avatar) {
+        avatar.src = src;
+      }
+    </script>
+
+
+
+  </body>
+
+</html>
